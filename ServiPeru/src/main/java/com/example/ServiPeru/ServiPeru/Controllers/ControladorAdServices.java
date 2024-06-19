@@ -74,7 +74,7 @@ public class ControladorAdServices {
         Random random = new Random();
         int codigoGenerado;
 
-        // Intentar generar un código único hasta que se logre
+        
         do {
             try (Connection connection = ConexionBD.getConexion()) {
                 // Generar un número aleatorio en el rango de 10000 a 99999
