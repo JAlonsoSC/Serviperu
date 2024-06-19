@@ -55,7 +55,7 @@ public class ControladorAdServices {
                               @RequestParam String Cargo
                               ) {
 
-        // Llama al servicio para guardar el servicio en la base de datos
+        
         int codigo = generarCodigoAleatorio();
 
         String res = serviceOperarios.crear(codigo,NombreOp,Apellido,DNI,Telefono,Correo);
