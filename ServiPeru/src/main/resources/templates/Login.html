@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servi Peru Login</title>
+    <link rel="stylesheet" href="/CSS/Login.css">
+</head>
+<body>
+<header>
+    <form class="form" method="POST" th:action="@{/login}">
+        <h2>Servi Peru</h2>
+        <div class="inputs">
+            <input type="text" class="box" name="usuario" placeholder="Ingrese su usuario" autocomplete="off" required>
+            <input type="password" class="box" name="contraseña" placeholder="Ingrese su contraseña" required><br>
+            <button type="submit">Ingresar</button>
+        </div>
+    </form>
+</header>
+</body>
+</html>
